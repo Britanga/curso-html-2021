@@ -1,0 +1,52 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> /*Usando CSS*/
+        .parrafo-1{
+            color: red;
+        }
+    </style>
+</head>
+
+<!-- 
+    Algunos atributos globales que están disponibles para la mayoría de etiquetas en HTML
+
+    class -> Este atributo se usa para dar estilos a través de CSS
+
+    id -> Es un identificador único que utiliza para seleccionar el elemento desde Js y para hacer navegacion a traves de anclas (no se puede repetir, debe ser único)
+
+    title -> Es un atributo que ayuda a la accesibilidad mostrando una descripción del elemento al que pertenece. Aparece el mensaje en un tooltip.
+
+    data-* -> Es un atributo que nos permite guardar algún valor en la etiqueta HTML.
+    Es muy beneficioso en JavaScript.
+
+<!-- Representa todo el contenido de nuestra página web -->
+
+<body>
+
+    <p class="parrafo-1">Clases</p>
+    <p id="parrafo">Identificador a través de un ID</p>
+    <p title="Este es un ejemplo del atributo title">Título con tooltip</p>
+    <p id="parrafo-2" data-ejemplo="Datos de ejemplo">Datos pasados en la etiqueta</p>
+
+    <!--Usando JavaScript-->
+    <script>
+        const p = document.getElementById('parrafo')
+        const parrafo2 = document.getElementById('parrafo-2')
+
+        console.log(p.textContent)
+        console.log(parrafo2.dataset.ejemplo)
+    </script>
+
+</body>
+</html>

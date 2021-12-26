@@ -1,0 +1,30 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get vs post</title>
+</head>
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    <!-- Get vs post -->
+    <!-- Get muestra Cannot GET /formularios/enviar.html y los datos en el URL
+    y post muestra error HTTP ERROR 405 sin datos en el URL pero si en inspeccionar elemento -->
+    <!-- <form action="enviar.html" method="GET"> -->
+    <form action="enviar.html" method="POST">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name">
+        <label for="surname">Apellido</label>
+        <input type="text" id="surname" name="surname">
+        <input type="submit">
+    </form>
+    <!-- Muy importante el atributo name a los inputs del formulario para enviar datos al servidor -->
+</body>
+</html>

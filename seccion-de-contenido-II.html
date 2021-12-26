@@ -1,0 +1,94 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de contenido II</title>
+</head>
+
+<!--
+    section: Es un contenedor genérico que agrupa contenido que esta relacionado. Cuando
+    creamos bloques cuyo contenido es parte de un bloque total usaremos section.
+
+    article: Es un contenedor que representa contenido independiente, es decir, podemos
+    leer ese fragmento en cualquier otro sitio y tendría sentido por si mismo.
+
+    aside: Se utiliza para representar contenido relacionado pero que no forma parte del
+    contenido principal.
+
+    Anidamiento:
+        Un section puede contener articles, por ejemplo, si tenemos varios articulos que
+        hablan sobre noticias, deben ir dentro de un section, ya que es contenido
+        relacionado entre si, y los article serían contenido independiente porque podríamos
+        leer uno sin haber leido el resto, y seguiría teniendo sentido.
+        El article es definido como un componente de la página de contenido independiente,
+        esto implica que esta etiqueta pueda tener un header y un footer propios.
+
+        También existe el caso en el que un article contenga varias secciones, el articulo
+        independiente podría ser navegadores y este contener dentro secciones como navegadores
+        más utilizados en 2021.
+-->
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    <header>
+        <!-- <h1>NOTICIAS NACIONALES</h1> -->
+        <h1>Cursos de desarrollo web gratuitos</h1>
+    </header>
+    <aside>Visita mi canal de Youtube</aside>
+    <main>
+        <!-- section con articles dentro -->
+        <!-- section= Agrupa contenido relacionado
+            (en este caso agrupamos las noticias del día)
+            header= No es obligatorio semánticamente
+            h4= Obligatorio semánticamente
+            p= Obligatorio semánticamente
+            footer= No es obligatorio semánticamente-->
+        <!--<section>
+            <h2>Section como contenedor</h2>
+            <section>
+            <h3>Noticias del Día</h3>
+            <article>
+                <header>
+                    <h4>Noticia 1</h4>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem inventore repellendus soluta doloremque! Facilis officiis optio nisi molestias suscipit animi eveniet ratione neque quisquam. Cum beatae ducimus hic esse aspernatur.</p>
+                <footer>La noticia 1 ocurrio en Madrid</footer>
+            </article>
+            <article>
+                <h4>Noticia 2</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque sapiente temporibus saepe, nostrum suscipit vitae! Sapiente, sit! Recusandae quod, facere asperiores iure deserunt, mollitia, neque ad amet quia sapiente error.</p>
+            </article>
+            <article>
+                <h4>Noticia 3</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis architecto consequuntur debitis! Repudiandae ab aliquam ullam vel, animi error, neque reiciendis id vitae possimus voluptate sequi eius amet quasi consectetur.</p>
+            </article>
+        </section>
+    </section> -->
+
+    <!-- article con sections dentro -->
+    <!--<article>
+        <h2>Navegadores más utilizados en 2020</h2>
+        <section>
+            <header>
+                <h3>Chrome</h3>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquam laborum quisquam fuga provident animi. Earum debitis rem corrupti quam quaerat aliquam ut, assumenda voluptas adipisci, magni nobis laborum veritatis!</p>
+            <footer>Creado por Google</footer>
+        </section>
+        <section>
+            <h3>Firefox</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, cumque! At pariatur nobis adipisci, quos quo non mollitia aperiam deserunt delectus, asperiores placeat sequi doloribus? Perferendis excepturi ipsa totam eum!</p>
+        </section>
+    </article> -->
+    </main>
+    <footer>20-7-2021</footer>
+</body>
+
+</html>

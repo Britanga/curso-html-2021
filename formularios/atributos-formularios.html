@@ -1,0 +1,53 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de los formularios</title>
+</head>
+
+<!-- 
+    placeholder -> Da una pista de lo que el usuario tiene que introducir
+    required -> Hace que un campo sea obligatorio
+    readonly -> Hace que un campo sea de solo lectura
+    disabled -> Desactiva el campo, no se podrá escribir en el autofocus
+    min - max -> Establece el mínimo y máximo de un campo numérico
+    minlenght - maxlenght -> Establece el mínimo y máximo de caracteres de un campo de texto
+    selected -> Equivale a checked en los select, sirve para establecer una opción por defecto
+    autofocus -> Para poner el foco por defecto al cargar el formulario
+ -->
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    <form>
+        <!-- placeholder y required -->
+        <input type="text" placeholder="Introduce tu nombre" required>
+
+        <!-- readonly -->
+        <input type="text" value="Hola" readonly>
+
+        <!-- disabled -->
+        <input type="text" value="Hola" disabled>
+
+        <!-- selected -->
+        <select name="numbers">
+            <option value="one">One</option>
+            <option value="two" selected>Two</option>
+        </select>
+
+        <!-- min - max -->
+        <input type="number" min="5" max="10"> <!-- No es necesario colocar los 2 min y max-->
+
+        <!-- minlenght - maxlenght y autofocus -->
+        <input type="text" minlength="3" maxlength="5" required autofocus>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

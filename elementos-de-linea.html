@@ -1,0 +1,59 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos en línea</title>
+</head>
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    <h1>Elementos de línea</h1>
+    <!-- 
+        em -> emphasis
+        strong -> más enfasis
+        small -> Menos enfasis que el texto normal
+        br -> Forzar un salto de linea
+        wbr -> Salto de linea si hiciera falta
+        time -> Se usa para representar un contenido de hora/fecha
+
+        Etiquetas que sirven para dar estilos:
+        i -> italic
+        b -> bold
+        u -> underline
+
+        Otras etiquetas:
+        sup -> Superíndice
+        sub -> Subíndice
+
+        em y strong dan más relevancia al texto(si la relevancia se determina en números
+        em tendría 1 y strong 2 y lo demás 0, por lo cual strong es más importante)
+        small da menos relevancia (si fuera un número sería -1)
+     -->
+    
+    <p> <em>El dinero</em> es importante pero <strong> la salud </strong>es lo más importante. <small>Saludos!</small></p>
+
+    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Placeat quidem alias quisquam tempore accusamus ducimus et voluptatem ipsam exercitationem earum, dolorum distinctio asperiores adipisci minima tenetur ut, quis harum in!</p>
+
+    <p>http://127.0.0.1:5500/<wbr>cursos/<wbr>html/<wbr>elementos/<wbr>elementos-de-linea.html</p>
+    <time>23/07/2021 11:57</time>
+
+    <p>
+        <i>Italic</i>
+        <b>Bold</b>
+        <u>Underline</u>
+    </p>
+
+    <p>4 elevado al cuadrado se representa así 4<sup>2</sup></p>
+
+    <p>
+        Agua oxigenada tiene la formula H<sub>2</sub>O<sub>2</sub>
+    </p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad</title>
+</head>
+
+<!-- Accesibilidad: Es el hecho de poder hacer una pagina web que sea accesible para todo el mundo, independientemente de si puedan verla o no (Pensado para personas invidentes) -->
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    <!-- tabindex: permite al usuario moverse por la pagina indicando un orden.
+    Normalmente este atributo se pone en las zonas donde queramos navegar a traves del tabulador -->
+    <p tabindex="1">Párrafo 1</p>
+    <p tabindex="2">Párrafo 2</p>
+    <p tabindex="3">Párrafo 3</p>
+
+    <!-- aria-label: ponemos la info que queremos que la extension del navegador lea
+    role: indica que tipo de elemento es el que estamos posicionandonos -->
+    <a href="#" aria-label="Leer más sobre la noticia del agua en marte" role="link">Leer más</a>
+</body>
+</html>

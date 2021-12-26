@@ -1,0 +1,40 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura básica de un formulario</title>
+</head>
+
+<!-- 
+    La estructura básica de un formulario se compone de 4 elementos
+
+    form -> Es la etiqueta que engloba nuestro formulario
+    label -> Sirve para escribir el nombre del campo a rellenar
+    input -> Sirve para crear un campo que permitirá el usuario interactuar
+    button -> Crea un botón que permitirá enviar el formulario
+-->
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+
+    <form>
+        <!-- Asociar input y label (manera frecuente) -->
+        <!-- <label for="name">Nombre</label>
+        <input id="name"> -->
+        <!-- Asociar input y label (manera poco habitual, a la hora de dar estilos a un formulario el hecho de tener el label y el input en el mismo bloque no nos permite jugar tanto con los elementos) -->
+        <label>
+            Nombre
+            <input>
+        </label>
+        <button>Enviar formulario</button>
+    </form>
+
+</body>
+</html>

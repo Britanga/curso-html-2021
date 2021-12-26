@@ -1,0 +1,88 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido embebido</title>
+
+    <style>
+        img, 
+        video {
+            max-width: 100%; /*Para que la imagen no se desborde*/
+        }
+    </style>
+</head>
+
+<!-- 
+    DPR (Device Pixel Ratio)
+	Es la relación que existe entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para "pintar" contenido
+
+    DPR = pixeles reales / pixeles disponibles
+ -->
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    <h1>Contenido embebido</h1>
+    <!-- <img src="/contenido-embebido/assets/images/facebook.svg" alt="logo de facebook"> -->
+    <!-- atributo width no recomendable utilizarlo, mejor es CSS -->
+    <!-- <img src="/contenido-embebido/assets/images/Caballo.jpg" width="300" alt=""> -->
+
+    <!-- Atributo srcset: Sirve como condicional para cuando el DPR tiene un valor en especifico escoger una de las imagenes con el n°x.
+        
+    También se puede usar src como copia de seguridad por si el usuario utiliza el navegador internet explorer cargue alguna imagen -->
+    <!-- <img srcset="
+    /contenido-embebido/assets/images/Caballo.webp,
+    /contenido-embebido/assets/images/Caballo.jpg,
+    /contenido-embebido/assets/images/Panda.webp 2x,
+    /contenido-embebido/assets/images/Panda.png 2x"
+    src="/contenido-embebido/assets/images/Caballo.jpg" alt="Imagen de portada"> -->
+
+    <!-- Etiqueta picture(Se usa más que srcset): Funciona igual que srcset pero este lo soporta todos los navegadores y da más opciones.
+    Obligatorio el srcset y src -->
+    <picture>
+        <!-- <source srcset="
+        /contenido-embebido/assets/images/Caballo.webp,
+        /contenido-embebido/assets/images/Caballo.jpg"> -->
+
+        <!-- <source srcset="/contenido-embebido/assets/images/Caballo.webp,
+        /contenido-embebido/assets/images/Caballo.jpg" media="(max-width:1200px)">
+        <img src="/contenido-embebido/assets/images/Caballo.jpg" alt=""> -->
+    </picture>
+
+    <!-- Etiqueta audio: 
+    Atributo:
+    controls: obligatorio para que se visualize el audio
+    autoplay: reproduce automáticamente (En local funciona pero en un dominio real pueda que no)
+    muted: silenciado automáticamente -->
+    <!-- <audio src="/contenido-embebido/assets/audio/Murda.mp3" controls autoplay muted></audio> -->
+
+    <!-- Etiqueta video:
+    loop: autoreproduce otra vez una vez finalice el video
+    poster: indica cual sera la miniatura -->
+    <!-- <video src="/contenido-embebido/assets/video/naturaleza.mp4" controls muted loop poster="/contenido-embebido/assets/images/Caballo.jpg"></video> -->
+
+    <!-- Etiqueta iframe:
+    Se busca en la parte de "compartir"->"insertar" y se copia el codigo iframe (Los elementos indispensables son width, height y src)
+    No es buena idea utilizar muchos iframe porque van a realentizar mucho la carga de nuestro sitio web -->
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/nK5QNFWlhug" title="YouTube video player"></iframe> -->
+
+    <!-- Etiqueta figure:
+    Se utiliza siempre que se quiera romper el flujo del contenido con un contenido relacionado pero que no es necesario para la interpretación del artículo, es decir; que si lo quitaramos seguiría funcionando -->
+    <h2>Gatos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt repellat nihil excepturi ipsam adipisci quia magni voluptatibus inventore fugit sunt recusandae libero quidem voluptatem provident eveniet, est ducimus ea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt repellat nihil excepturi ipsam adipisci quia magni voluptatibus inventore fugit sunt recusandae libero quidem voluptatem provident eveniet, est ducimus ea.</p>
+    <!-- figcaption sirve para poner texto abajo de la imágen (Si se coloca arriba de la imágen se vería arriba aunque es menos habitual) también sirve para tablas, gráficos, fragmentos de codigo, una cita, cualquier cosa que sea contenido relacionado pero que sea opcional su presencia, que se pueda quitar y el articulo siga teniendo sentido -->
+    <figure>
+        <img src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5b2a14dc5cafe841769953f9/gato-gris-suelo-salon_0.jpg" alt="gato tumbado">
+        <figcaption>Gato común tumbado</figcaption>
+    </figure>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt repellat nihil excepturi ipsam adipisci quia magni voluptatibus inventore fugit sunt recusandae libero quidem voluptatem provident eveniet, est ducimus ea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt repellat nihil excepturi ipsam adipisci quia magni voluptatibus inventore fugit sunt recusandae libero quidem voluptatem provident eveniet, est ducimus ea.</p>
+</body>
+</html>

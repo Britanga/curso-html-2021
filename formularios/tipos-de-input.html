@@ -1,0 +1,101 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+</head>
+
+<!-- 
+    input type:
+    Button vs Type Button
+    button -> Se comporta igual que un botón <button>
+    submit -> Se utiliza para enviar el formulario
+
+    Inputs de tipo fecha
+    date: -> Se utiliza para introducir una fecha
+    datetime -> Obsoleto
+    datetime-local -> fecha y hora, no funciona en firefox
+    time -> Se utiliza para introducir una hora
+        TIP
+            *Se recomienda usar datetime-local y time para seleccionar fecha y hora
+            hidden -> Campo oculto, puede contener valor pero no se mostrará
+    month -> Se utiliza para introducir un mes
+    week -> Se utiliza para introducir el número de semana del año
+
+    Inputs para móviles
+    search -> Se utiliza para las barras de búsqueda
+    tel -> Se utiliza para introducir números telefónicos
+    email -> Se utiliza para introducir un email
+    password -> Se utiliza para contraseñas
+    url -> Se utiliza para introducir URLs
+
+    Más tipos de inputs
+    color: -> Se utiliza para específicar un color
+    number -> Se utiliza para valores númericos
+    range -> Se utiliza para establecer un rango
+    reset -> Se utiliza para resetear el formulario
+    text -> Valor por defecto
+ -->
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    
+    <form>
+        <!-- Button vs Type Button -->
+        <!-- Button sirve para enviar formulario a diferencia de type="button" que es para usarlo con javascript mas no para enviar formulario (para enviar formulario se usa type="submit") -->
+        <input>
+        <input type="button" value="Enviar input">
+        <button>Enviar</button>
+
+        <!-- Inputs de tipo fecha -->
+        <input type="date"> <!-- Fecha -->
+        <input type="datetime-local"> <!-- Fecha y hora (No recomendable xq no funciona en firefox) -->
+        <input type="date"> <!-- Fecha -->
+        <input type="time"> <!-- y hora (Recomendable aunque se vea un poco peor) -->
+        <input type="month"> <!-- Mes -->
+        <input type="week"> <!-- Semanas -->
+
+        <!-- Inputs para móviles (div para dar un salto de línea)-->
+        <div>
+            <label> search
+                <input type="search">
+            </label>
+        </div>
+        <div>
+            <label> teléfono
+                <input type="tel">
+            </label>
+        </div>
+        <div>
+            <label> email
+                <input type="email">
+            </label>
+        </div>
+        <div>
+            <label> password
+                <input type="password">
+            </label>
+        </div>
+        <div>
+            <label> url
+                <input type="url">
+            </label>
+        </div>
+
+        <!-- Más tipos de inputs -->
+        <input type="color">
+        <input type="number">
+        <input type="range" step="5" min="0" max="20">
+        <input type="reset">
+        <input type="text">
+    </form>
+
+</body>
+</html>

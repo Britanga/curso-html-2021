@@ -1,0 +1,68 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otras etiquetas de bloque</title>
+</head>
+
+<!-- 
+    address -> Se utiliza para aportar información de contacto para el article más cercano o para todo el body
+
+    blockquote -> Se utiliza para marcar las citas a otros autores o documentos. Se puede incluir el atributo cite para poner un enlace al documento original o fuente
+
+    pre-> Se utiliza para tener código preformateado que necesita ser representado igual que se escribió
+
+    div-> Se usa como división del documento, semánticamente no significa nada, es un contenedor genérico que se usa generalmente para dar estilos a través de css o para usar algo denominado "delegación de eventos" en javascript
+
+    hr-> horizontal rule, se utiliza para decirle al navegador que vamos a cambiar de tema
+-->
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    
+    <address> <!-- Un br sería correcto para ajustar la información -->
+        Tony Stark <br>
+        Malibú 10880 <br>
+        90265 <br>
+        California <br>
+    </address>
+
+    <!-- Forma de representar una cita, en este caso una cita de una película, el link es información para el navegador -->
+    <blockquote cite="https://www.entrepreneur.com/article/312598">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus impedit illo eaque perferendis odio itaque tempore quam! Vel vero nostrum, quam voluptate quidem recusandae. Quibusdam voluptates nisi non nemo sed.
+        </p>
+    </blockquote>
+
+    <!-- Cuando queramos que el contenido se vea exactamente igual que lo hemos escrito utilizamos pre -->
+    <pre>
+                        Hola,
+        ¿Qué tal?
+    </pre>
+
+    <!-- Gracias a div podemos dar estilos a c/u elementos y que sigan estando relacionados entre si.
+        Si queremos colocar varios usuarios se tiene que colocar un div en c/u -->
+    <div>
+        <h2>Nombre</h2>
+        <p>email</p>
+        <p>Descripción</p>
+    </div>
+
+    <div>
+        <h2>Nombre</h2>
+        <p>email</p>
+        <p>Descripción</p>
+    </div>
+
+    <!-- hr no sirve para dibujar lineas, hr sirve para informar al navegador de que vamos hacer un cambio de tema -->
+    <hr>
+
+</body>
+</html>

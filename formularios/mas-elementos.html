@@ -1,0 +1,54 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más elementos de formulario</title>
+</head>
+
+<!-- 
+    fieldset -> Se utiliza para agrupar elementos dentro de un formulario
+    legend -> Representa una etiqueta para el contenido del fieldset
+    file -> Este input se utiliza para cargar archivos y enviarlos desde un formulario
+    meter -> Representa un valor dentro de un rango contenido
+    progress -> Representa el progreso de una tarea
+    textarea -> Se utiliza para introducir texto en un formulario
+ -->
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    <!-- fieldset y legend -->
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surname">
+        </div>
+    </fieldset>
+
+    <!-- file -->
+    <!-- <input type="file"> -->
+
+    <!-- meter -->
+    <label for="fuel">Combustible</label>
+    <meter id="fuel" min="0" max="100" value="60" low="30" high="75" optimum="50"></meter>
+
+    <!-- progress -->
+    <label for="task">Tarea 1</label>
+    <progress id="task" max="100" value="10"></progress>
+
+    <!-- textarea -->
+    <label for="message">Mensaje</label>
+    <textarea name="" id="message" cols="10" rows="10"></textarea>
+</body>
+</html>

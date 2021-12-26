@@ -1,0 +1,58 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otras etiquetas de linea</title>
+
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<!-- 
+    span -> Es un contenedor de linea, equivalente a div, se suele usar para encerrar palabras o pequeños textos y darles estilo a través de CSS o localizarlos desde javascript. Semánticamente no significa nada
+
+    q -> Es el equivalente a blockquote, significa quote, por eso el de bloque se llama block - quote. Sirve para poner citas pero en línea.
+
+    code -> Sirve para encerrar código que queremos representar visualmente, suele ir unido con la etiqueta pre.
+
+    Entidades especiales en HTML - Código ASCII
+    https://ascii.cl/es/codigos-html.htm
+-->
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    
+    <!-- span sirve para localizarlo en javascript o para darle estilos en CSS -->
+    <p>Lorem ipsum dolor sit amet <span> consectetur adipisicing </span>elit. Suscipit, autem sequi quisquam accusamus fuga minima dicta similique inventore consequuntur qui officiis eaque pariatur adipisci exercitationem, animi illo corporis reiciendis numquam.</p>
+
+    <!-- Forma de representar una cita, en este caso una cita de una película, el link de cite es información para el navegador -->
+    <q cite="">Yo soy Iron Man</q>
+
+    <pre>
+        <!-- Cuando queramos que el codigo se represente visualmente usamos code -->
+        <code>
+            span {
+                color: red;
+            }
+        </code>
+    </pre>
+
+    <!-- Usando Código ASCII para representar visualmente el <h1> -->
+    <p>La etiqueta <code>&lt;h1&#62;</code> se utiliza para representar títulos de primer nivel</p>
+
+    <!-- Simbolo de copyright -->
+    &copy;
+
+</body>
+</html>
